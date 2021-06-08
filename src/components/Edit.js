@@ -59,7 +59,7 @@ const Edit = (data) => {
 
 	function changeImage(img){
 		const account = "storagefornbiclearance";
-		const sas = "sp=racwdl&st=2021-06-08T05:15:43Z&se=2021-07-31T13:15:43Z&sip=20.43.132.130&sv=2020-02-10&sr=c&sig=5QadYIAxVH0CrgSn6ECnnFw5CwNb%2BzJTrCM3HgW%2F7Cg%3D";
+		const sas = "sp=racwdl&st=2021-06-08T05:15:43Z&se=2021-07-31T13:15:43Z&sip=0.0.0.0-255.255.255.255&spr=https&sv=2020-02-10&sr=c&sig=x6QApaTRv2eOcrwR59Of%2Fkn83tUeK3kO8PsXTL1IJRI%3D";
 
 		const blobServiceClient = new BlobServiceClient(`https://${account}.blob.core.windows.net${sas}`);
 
