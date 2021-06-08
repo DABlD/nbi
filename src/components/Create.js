@@ -95,17 +95,25 @@ const Create = (data) => {
                 application.branch = branch; 
                 application.date = date; 
                 application.valid_id = valid_id; 
-                application.id_number = $('.iid_number')[0].value; 
+                application.id_number = $('.iid_number')[0].value;
 
-                axios.post(api + "/api/Applicant/Create", {applicant, relationship, application}
-				)
-					.then(function (response) {
-					console.log(response);
-					window.location.href = local;
-				})
-					.catch(function (error) {
-					console.log(error);
-				});
+				if(applicant.fname == "" || applicant.mname == "" || applicant.lname == "" || applicant.birthday == "" || applicant.gender == "" || applicant.civil_status == "" || applicant.highest_education == "" || applicant.landline_number == "" || applicant.mobile_number == "" || applicant.email == "" || applicant.complexion == "" || applicant.peculiarities == "" || applicant.religion == "" || applicant.height == "" || applicant.weight == "" || applicant.image == "" || relationship.name == "" || relationship.name_of_father == "" || relationship.place_of_birth1 == "" || relationship.name_of_mother == "" || relationship.place_of_birth2 == "" || application.branch == "" || application.date == "" || application.valid_id == "" || application.id_number == ""){
+					Swal.fire({
+						icon: 'error',
+						title: 'All fields are required!',
+					})
+				}
+				else{
+					axios.post(api + "/api/Applicant/Create", {applicant, relationship, application}
+					)
+						.then(function (response) {
+						console.log(response);
+						window.location.href = local;
+					})
+						.catch(function (error) {
+						console.log(error);
+					});
+				}
 			}
 		})
 	}
