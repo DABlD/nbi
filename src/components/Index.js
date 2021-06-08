@@ -8,8 +8,8 @@ import Moment from 'react-moment'
 
 import Swal from 'sweetalert2'
 
-const api = "http://localhost:62143";
-const local = "http://localhost:3000";
+const api = "https://nbi-webapi.azurewebsites.net";
+const local = "https://nbimvc.azurewebsites.net";
 
 const Index = () => {
 	

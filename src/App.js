@@ -12,9 +12,9 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path="/" component={Index} />
-          <Route exact path="/applicant/:id" component={Applicant} />
-          <Route exact path="/create" component={Create} />
-          <Route exact path="/edit/:id" component={Edit} />
+          <Route path="/applicant/:id" component={Applicant} />
+          <Route path="/create" component={Create} />
+          <Route path="/edit/:id" component={Edit} />
         </Switch>
       </Router>
     </div>
