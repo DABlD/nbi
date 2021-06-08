@@ -7,8 +7,8 @@ import "flatpickr/dist/themes/material_green.css"
 
 import Select from 'react-select'
 
-const api = "http://localhost:62143";
-const local = "http://localhost:3000";
+const api = "https://nbi-webapi.azurewebsites.net";
+const local = "https://nbi-newmvc.azurewebsites.net";
 
 const Applicant = (data) => {
 	

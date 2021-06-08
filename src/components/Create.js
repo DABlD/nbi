@@ -11,8 +11,8 @@ import Select from 'react-select'
 
 import { BlobServiceClient, BlobItem } from "@azure/storage-blob"
 
-const api = "http://localhost:62143";
-const local = "http://localhost:3000";
+const api = "https://nbi-webapi.azurewebsites.net";
+const local = "https://nbi-newmvc.azurewebsites.net";
 
 const Create = (data) => {
 
