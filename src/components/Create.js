@@ -35,12 +35,10 @@ const Create = (data) => {
 
 	function changeImage(img){
 		const account = "storagefornbiclearance";
-		const sas = "?sv=2020-02-10&ss=bfqt&srt=sco&sp=rwdlacuptfx&se=2021-06-30T13:53:59Z&st=2021-06-08T05:53:59Z&sip=20.43.132.130&spr=https,http&sig=BEKBL%2F%2B7aYVgfewLEkc7T%2Bg1qfSc5tZ7bhLXr9UydY8%3D";
+		const sas = "?sv=2020-02-10&ss=bfqt&srt=sco&sp=rwdlacuptfx&se=2021-07-31T12:47:17Z&st=2021-06-08T04:47:17Z&sip=20.43.132.130&spr=https,http&sig=Yf%2F01b3rqjErihyzCyqY5Xtlx8FKPNATnQa3zuKNAoQ%3D";
 
 		const blobServiceClient = new BlobServiceClient(`https://${account}.blob.core.windows.net${sas}`);
-		console.log(`https://${account}.blob.core.windows.net${sas}`);
-		console.log(blobServiceClient);
-		
+
 		var containerClient = blobServiceClient.getContainerClient("images");
 
 		file = moment().format() + ".png";
