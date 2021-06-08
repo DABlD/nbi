@@ -39,7 +39,7 @@ const Create = (data) => {
 
 		const blobServiceClient = new BlobServiceClient(`https://${account}.blob.core.windows.net${sas}`);
 
-		var containerClient = blobServiceClient.getContainerClient("images");
+		var containerClient = blobServiceClient.getContainerClient("img");
 
 		file = moment().format() + ".png";
 		const blockBlobClient = containerClient.getBlockBlobClient(file);

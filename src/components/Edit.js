@@ -63,7 +63,7 @@ const Edit = (data) => {
 
 		const blobServiceClient = new BlobServiceClient(`https://${account}.blob.core.windows.net${sas}`);
 
-		var containerClient = blobServiceClient.getContainerClient("images");
+		var containerClient = blobServiceClient.getContainerClient("img");
 
 		file = moment().format() + ".jpg";
 		const blockBlobClient = containerClient.getBlockBlobClient(file);
