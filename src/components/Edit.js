@@ -138,7 +138,7 @@ const Edit = (data) => {
 					})
 				}
 				else{
-					axios.post(api + "/api/Applicant/Create", {applicant, relationship, application}
+					axios.put(api + "/api/Applicant/Edit", {applicant, relationship, application}
 					)
 						.then(function (response) {
 						console.log(response);
