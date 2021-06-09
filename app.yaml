@@ -13,8 +13,7 @@ pool:
 variables:
   stage: development
   serviceConnection: Visual Studio Enterprise Subscription (47de11e2-f080-4fd6-bc2e-f99abe2649cb)
-  appServiceName: 
- NBI-newMVC
+  appServiceName: NBI-newMVC
  
 steps:
 - task: NodeTool@0
