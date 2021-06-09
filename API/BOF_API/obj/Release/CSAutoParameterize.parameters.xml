@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="nbi_sqldatabaseEntities-Web.config Connection String" description="nbi_sqldatabaseEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Applicant.csdl|res://*/Models.Applicant.ssdl|res://*/Models.Applicant.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=nbisqldatabase.database.windows.net;initial catalog=nbi_sqldatabase;user id=josephine.n.garduque;password=Nics0319;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\josephine\.n\.garduque\\Desktop\\new-nbiAPI\\nbi_api\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='nbi_sqldatabaseEntities']/@connectionString" />
+  </parameter>
+  <parameter name="nbi_sqldatabaseEntities1-Web.config Connection String" description="nbi_sqldatabaseEntities1 Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Applicant.csdl|res://*/Models.Applicant.ssdl|res://*/Models.Applicant.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=nbisqldatabase.database.windows.net;initial catalog=nbi_sqldatabase;user id=josephine.n.garduque;password=Nics0319;multipleactiveresultsets=True;application name=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\josephine\.n\.garduque\\Desktop\\new-nbiAPI\\nbi_api\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='nbi_sqldatabaseEntities1']/@connectionString" />
+  </parameter>
+</parameters>

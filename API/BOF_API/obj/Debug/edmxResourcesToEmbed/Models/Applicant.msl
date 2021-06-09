@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="nbi_sqldatabaseModelStoreContainer" CdmEntityContainer="nbi_sqldatabaseEntities1">
+    <EntitySetMapping Name="Applicants">
+      <EntityTypeMapping TypeName="nbi_sqldatabaseModel.Applicant">
+        <MappingFragment StoreEntitySet="Applicant">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="mname" ColumnName="mname" />
+          <ScalarProperty Name="lname" ColumnName="lname" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="civil_status" ColumnName="civil_status" />
+          <ScalarProperty Name="highest_education" ColumnName="highest_education" />
+          <ScalarProperty Name="landline_number" ColumnName="landline_number" />
+          <ScalarProperty Name="mobile_number" ColumnName="mobile_number" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="complexion" ColumnName="complexion" />
+          <ScalarProperty Name="peculiarities" ColumnName="peculiarities" />
+          <ScalarProperty Name="religion" ColumnName="religion" />
+          <ScalarProperty Name="height" ColumnName="height" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="image" ColumnName="image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Applications">
+      <EntityTypeMapping TypeName="nbi_sqldatabaseModel.Application">
+        <MappingFragment StoreEntitySet="Application">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="application_id" ColumnName="application_id" />
+          <ScalarProperty Name="branch" ColumnName="branch" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="valid_id" ColumnName="valid_id" />
+          <ScalarProperty Name="id_number" ColumnName="id_number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Relationships">
+      <EntityTypeMapping TypeName="nbi_sqldatabaseModel.Relationship">
+        <MappingFragment StoreEntitySet="Relationship">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="applicant_id" ColumnName="applicant_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="name_of_father" ColumnName="name_of_father" />
+          <ScalarProperty Name="place_of_birth1" ColumnName="place_of_birth1" />
+          <ScalarProperty Name="name_of_mother" ColumnName="name_of_mother" />
+          <ScalarProperty Name="place_of_birth2" ColumnName="place_of_birth2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
